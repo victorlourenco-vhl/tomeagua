@@ -3,13 +3,13 @@
     padding: 0;
 }
 a{
-    color: black;
+    color: #3ec5cc;
     font-family: sans-serif;
     text-decoration: none;
 }
 
 a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(201, 16, 16, 0.5);
 }
 
 #logo{
@@ -17,7 +17,7 @@ a:hover{
 }
 
 #header{
-    background-color: rgba(128, 128, 128, 0.151);
+    background-color: rgba(162, 163, 81, 0.158);
     padding: 1rem;
     height: 70px;
     display: flex;
