@@ -3,12 +3,11 @@
     padding: 0;
 }
 a{
-    color: #3ec5cc;
     font-family: sans-serif;
     text-decoration: none;
 }
 
-a:hover{
+#menu a:hover{
     color: rgba(201, 16, 16, 0.5);
 }
 
@@ -34,6 +33,7 @@ a:hover{
 }
 
 #menu a {
+    color: #34aeb4;
     display: block;
     padding: 0.8rem;
     font-size: 18px;
