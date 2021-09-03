@@ -3,9 +3,6 @@
     padding: 0px;
 }
 
-body{
-    margin: auto;
-}
 a{
     font-family: sans-serif;
     text-decoration: none;
@@ -44,10 +41,39 @@ a{
     font-size: 18px;
 }
 
-main{
+.input{
+    display: flex;
+    padding-bottom: 5px;
+    background-color: white;
 
+}
+#litros{
+    height: 25px;
+    width: 100px;
+    font-size: 20px;
+}
+#botao{
+    color: white;
+    background-color: green;
+    border-color: white;
+    margin-top: 0px;
+    padding: 5px;
+    height: 30px;
+    border-radius:25px;
+    font-size: small;
+}
+#botao:hover{
+    cursor: pointer;
+    color: green;
+    background-color: white;
+    border-color: green;
+    font-weight: bold;
+
+}
+main{
     background-color: rgb(230, 194, 128);
-    height: 80vh;
-    width: 40vh;
-    
+    margin: auto;
+    margin-top: 80px ;
+    height: 20rem;
+    width: 50rem
 }
