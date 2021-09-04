@@ -93,15 +93,7 @@ main{
     
 }
 
-.copo{
-    background-color: blue;
-    height: 70px;
-    width: 50px;
-    margin-left: 15px;
-  
 
-
-}
 .linhas-container{
     display: inline;
     width: 480px;
@@ -109,7 +101,11 @@ main{
     background-color: black;
 }
 .linhas{
+    display: flex;
     height: 95px;  
+    justify-content: space-between;
+    padding: 0 15px;
+    
 }
 #linha1{
     background-color: yellow;
@@ -120,8 +116,18 @@ main{
 #linha3{
     background-color: brown;
 }
-
-.copo{
-    position: fixed;
-    margin-top: 5px;
+.copos{
+    position: relative;
+    background-color: rgb(81, 200, 255);
+    height: 70px;
+    width: 50px;
+    margin-top: 12.5px;
+    border-radius: 3px;
+}
+.btn{
+    background-color: rgb(81, 200, 255);
+    height: 70px;
+    width: 50px;
+    margin-top: 12.5px;
+    border-radius: 3px;
 }
