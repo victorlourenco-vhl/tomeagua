@@ -7,6 +7,9 @@ a{
     font-family: sans-serif;
     text-decoration: none;
 }
+body{
+    background-color: rgb(255, 254, 254);
+}
 
 #menu a:hover{
     color: rgba(201, 16, 16, 0.5);
@@ -82,9 +85,43 @@ main{
 .corpo{
     background-color: red;
     height: 285px;
-    width: 25%;
+    width: 160px;
     padding: 0%;
     float: right;
     text-align: center;
     
+    
+}
+
+.copo{
+    background-color: blue;
+    height: 70px;
+    width: 50px;
+    margin-left: 15px;
+  
+
+
+}
+.linhas-container{
+    display: inline;
+    width: 480px;
+    height: 285px;
+    background-color: black;
+}
+.linhas{
+    height: 95px;  
+}
+#linha1{
+    background-color: yellow;
+}
+#linha2{
+    background-color: purple;
+}
+#linha3{
+    background-color: brown;
+}
+
+.copo{
+    position: fixed;
+    margin-top: 5px;
 }
