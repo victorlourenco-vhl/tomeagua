@@ -1,8 +1,18 @@
-const btnMobile = document.getElementById('btn-mobile');
-
-function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+function img01(){
+    document.getElementById("copo1").src="imagens/copo-vazio.png";
 }
-
-btnMobile.addEventListener('click', toggleMenu);
+function calcular(){
+    var litros = document.getElementById("litros").value;
+    console.log(litros);
+    if(litros == 1){
+        //document.querySelectorAll("#copo1, #copo2, #copo3, #copo4").src="imagens/copo-cheio.png";
+        //document.querySelectorAll("copo1", "copo2", "copo3", "copo4").src="imagens/copo-cheio.png";
+        var x = document.querySelectorAll("#copo1, #copo2, #copo3, #copo4");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].src="imagens/copo-cheio.png";
+          
+        } 
+   
+    }
+}
