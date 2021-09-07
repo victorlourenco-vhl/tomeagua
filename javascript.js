@@ -26,16 +26,27 @@ function calcular(){
         strBtn += btn;
         btnids.push(strBtn);
         strBtn = "#btn-copo";
+    }    
+    console.log(btnids);
+    var getIDs = document.querySelectorAll(btnids);
+    for(let c = 0; c < getIDs.length; c++){
+        getIDs[c].addEventListener("click", function(e){
+            var w = this.value;
+            var teste = "copo" + w;
+            document.getElementById(teste).src="imagens/copo-vazio.png";
+            console.log(w);
+        })
     }
-
-   
-
     
 }
-
-
-
 /*
+
+function mudarCopo(){
+        var x = indexof(this.innerHTML);
+        console.log(x);
+    }
+ 
+
 function img01(){
     document.getElementById("copo1").src="imagens/copo-vazio.png";
 }
