@@ -29,18 +29,38 @@ function calcular(){
     }    
     console.log(btnids);
     var getIDs = document.querySelectorAll(btnids);
+    var click = 0;
     for(let c = 0; c < getIDs.length; c++){
-        getIDs[c].addEventListener("click", function(e){
-            var w = this.value;
-            var teste = "copo" + w;
-            document.getElementById(teste).src="imagens/copo-vazio.png";
-            console.log(w);
+       
+        getIDs[c].addEventListener("click", function(e){ 
+            click += 1;
+            var v = this.value;
+           
+            var copoID = "copo" + v;
+            document.getElementById(copoID).src="imagens/copo-vazio.png";
+            
+            var z = document.getElementById(copoID).src;
+            var ultima = z.substring(z.lastIndexOf("-")+1);
+           
+         
+            
+            console.log("clicks" + click);
+            console.log(ultima);
+          
+            if (click == 2 && ultima == "vazio.png" ){
+                click = 1;
+                document.getElementById(copoID).src="imagens/copo-cheio.png";
+               
+            }else if (click == 2 && ultima == "cheio.png" ){
+                click = 1;
+                document.getElementById(copoID).src="imagens/copo-vazio.png";
+                
+            }
         })
     }
-    
 }
 /*
-
+http://127.0.0.1:5501/imagens/copo-vazio.png
 function mudarCopo(){
         var x = indexof(this.innerHTML);
         console.log(x);
