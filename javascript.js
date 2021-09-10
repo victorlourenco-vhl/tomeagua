@@ -1,5 +1,4 @@
 function calcular(){
-   
     var litros = document.getElementById("litros").value;
     var qtncopos = litros / 0.250;
     var copoids = [];
@@ -25,42 +24,52 @@ function calcular(){
         btnids.push(strBtn);
         strBtn = "#btn-copo";
     }    
-
-    var contador = 10;
-    function teste(){
-        
-        var estadoCopo = "";
-        var v = this.value;
-        var copoID = "copo" + v;  
-        var z = document.getElementById(copoID).src;
-        var ultima = z.substring(z.lastIndexOf("-")+1);
-        console.log("Ultima " + ultima);
-
-        
-        if (ultima === "cheio.png" ){
-            estadoCopo =  "";
-            estadoCopo = "imagens/copo-vazio.png";
-            
-        }
-        if (ultima === "vazio.png" ){
-            estadoCopo =  "";
-            estadoCopo = "imagens/copo-cheio.png";
-           
-        }
-         
-        document.getElementById(copoID).src=estadoCopo ;
-        console.log("contador" + contador)
-        
-    }
     var getIDs = document.querySelectorAll(btnids);
     for(var c = 0; c < getIDs.length; c++){
         getIDs[c].addEventListener("click", teste)
         
     }   
-    
-
-    
+    contador = 0;
 }
+
+function teste(){
+    
+    var litros = document.getElementById("litros").value;
+    var qtncopos = litros / 0.250;
+
+
+    var estadoCopo = "";
+    var v = this.value;
+    var copoID = "copo" + v;  
+    var z = document.getElementById(copoID).src;
+    var ultima = z.substring(z.lastIndexOf("-")+1);
+    console.log("Ultima " + ultima);
+    
+    if (ultima === "cheio.png" ){
+        estadoCopo =  "";
+        estadoCopo = "imagens/copo-vazio.png";
+        contador += 1;
+ 
+        
+  
+    }
+    if (ultima === "vazio.png" ){
+        estadoCopo =  "";
+        estadoCopo = "imagens/copo-cheio.png";
+        contador -= 1;
+    }
+    document.getElementById(copoID).src=estadoCopo ;
+    if (contador == qtncopos){
+        alert("Parabéns!!! Você cumpriu sua meta de beber " + litros + "L. Esperamos te ver novamente por aqui e continue se cuidando.");
+       
+        return;
+    }
+    console.log("contador" + contador);
+
+}
+
+
+
 /*
 http://127.0.0.1:5501/imagens/copo-vazio.png
 function mudarCopo(){
