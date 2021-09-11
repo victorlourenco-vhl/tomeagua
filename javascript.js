@@ -33,12 +33,12 @@ function calcular(){
 }
 
 function teste(){
-    
     var litros = document.getElementById("litros").value;
     var qtncopos = litros / 0.250;
 
-
+    
     var estadoCopo = "";
+    var corpoPorcentagem = "";
     var v = this.value;
     var copoID = "copo" + v;  
     var z = document.getElementById(copoID).src;
@@ -49,23 +49,32 @@ function teste(){
         estadoCopo =  "";
         estadoCopo = "imagens/copo-vazio.png";
         contador += 1;
- 
-        
-  
     }
-    if (ultima === "vazio.png" ){
+    else if (ultima === "vazio.png" ){
         estadoCopo =  "";
         estadoCopo = "imagens/copo-cheio.png";
         contador -= 1;
     }
     document.getElementById(copoID).src=estadoCopo ;
-    if (contador == qtncopos){
+    if (contador = 0){
+        corpoPorcentagem = "imagens/corpo/corpo-0.png";
+    }
+    else if (contador >= (qtncopos / 4) ){
+        corpoPorcentagem = "imagens/corpo/corpo-25.png";
+    }
+    else if (contador >= (qtncopos / 4)*2 ){
+        corpoPorcentagem = "imagens/corpo/corpo-50.png";
+    }
+    else if (contador == (qtncopos / 4)*3 ){
+        corpoPorcentagem >= "imagens/corpo/corpo-75.png";
+    }
+    else if (contador == qtncopos){
+        corpoPorcentagem = "imagens/corpo/corpo-100";
         alert("Parabéns!!! Você cumpriu sua meta de beber " + litros + "L. Esperamos te ver novamente por aqui e continue se cuidando.");
-       
         return;
     }
     console.log("contador" + contador);
-
+    document.getElementById("img-corpo").src=corpoPorcentagem;
 }
 
 
