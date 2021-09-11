@@ -5,6 +5,7 @@ function calcular(){
     var str = "#copo";
     if(litros == 0){
         document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
+      
     }
     for(var qtn = 1; qtn <= qtncopos; qtn++){
         str  += qtn;

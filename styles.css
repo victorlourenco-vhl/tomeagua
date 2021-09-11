@@ -41,9 +41,11 @@ img{
     display: flex;
     list-style: none;
     gap: 2rem;
+    
 }
 #menu a:hover{
     color: rgba(201, 16, 16, 0.5);
+    transition-duration: 0.5s;
 }
 
 #menu a {
@@ -82,7 +84,7 @@ main{
     height: 30px;
     border-radius:25px;
     font-size: small;
-    transition-duration: 0.5s;
+    
 }
 #botao:hover{
     cursor: pointer;
@@ -90,6 +92,7 @@ main{
     background-color: white;
     border-color: green;
     font-weight: bold;
+    transition-duration: 0.8s;
 
 }
 
