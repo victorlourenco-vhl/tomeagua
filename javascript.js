@@ -3,6 +3,9 @@ function calcular(){
     var qtncopos = litros / 0.250;
     var copoids = [];
     var str = "#copo";
+    if(litros == 0){
+        document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
+    }
     for(var qtn = 1; qtn <= qtncopos; qtn++){
         str  += qtn;
         copoids.push(str);
@@ -30,6 +33,7 @@ function calcular(){
         
     }   
     contador = 0;
+    document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
 }
 
 function teste(){
@@ -49,31 +53,41 @@ function teste(){
         estadoCopo =  "";
         estadoCopo = "imagens/copo-vazio.png";
         contador += 1;
+       
     }
-    else if (ultima === "vazio.png" ){
+    if (ultima === "vazio.png" ){
         estadoCopo =  "";
         estadoCopo = "imagens/copo-cheio.png";
         contador -= 1;
+      
     }
     document.getElementById(copoID).src=estadoCopo ;
-    if (contador = 0){
-        corpoPorcentagem = "imagens/corpo/corpo-0.png";
+
+   if (contador >= 0){
+    corpoPorcentagem = "imagens/corpo/corpo0.png";
+   }
+    if (contador >= (qtncopos / 4) ){
+        corpoPorcentagem = "imagens/corpo/corpo25.png";
     }
-    else if (contador >= (qtncopos / 4) ){
-        corpoPorcentagem = "imagens/corpo/corpo-25.png";
+    
+    if (contador >= (qtncopos / 2) ){
+        corpoPorcentagem = "imagens/corpo/corpo50.png";
     }
-    else if (contador >= (qtncopos / 4)*2 ){
-        corpoPorcentagem = "imagens/corpo/corpo-50.png";
+    
+    if (contador >= (qtncopos / 4)*3 ){
+        corpoPorcentagem = "imagens/corpo/corpo75.png";
     }
-    else if (contador == (qtncopos / 4)*3 ){
-        corpoPorcentagem >= "imagens/corpo/corpo-75.png";
+
+    if (contador == qtncopos){
+        corpoPorcentagem = "imagens/corpo/corpo100.png";
+        document.getElementById("img-corpo").src=corpoPorcentagem;
+        if (corpoPorcentagem == "imagens/corpo/corpo100.png"){
+            alert("Parabéns!!! Você cumpriu sua meta de beber " + litros + "L. Esperamos te ver novamente por aqui e continue se cuidando.");
+        }
+         
     }
-    else if (contador == qtncopos){
-        corpoPorcentagem = "imagens/corpo/corpo-100";
-        alert("Parabéns!!! Você cumpriu sua meta de beber " + litros + "L. Esperamos te ver novamente por aqui e continue se cuidando.");
-        return;
-    }
-    console.log("contador" + contador);
+    
+    console.log("contador " + contador + " Qtn: " + qtncopos);
     document.getElementById("img-corpo").src=corpoPorcentagem;
 }
 
