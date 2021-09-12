@@ -22,17 +22,17 @@ img{
  
     background-color: rgba(162, 163, 81, 0.158);
     box-sizing: border-box;
-    height: 90px;
+    height: 80px;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; /*Pega os itens do header e dá espaçamento*/
+    justify-content: space-between; /*Pega os itens do header e dá espaçamento*/width: 100%;
 }
 #logo{
     max-width: 100%;
     max-height: 100%;
     height: 75px;
-    margin-top: 7.5px;
+    margin-top: 10px;
     margin-left: 35px;
 }
 
@@ -40,8 +40,7 @@ img{
     margin-right: 100px;
     display: flex;
     list-style: none;
-    gap: 2rem;
-    
+    gap: 2rem;   
 }
 #menu a:hover{
     color: rgba(201, 16, 16, 0.5);
@@ -62,6 +61,9 @@ main{
     margin-top: 65px ;
     height: 20rem;
     width: 670px;
+    min-width: 320px;
+    max-width: 670px;
+    width: 100%;
     
 }
 .input{
@@ -103,8 +105,9 @@ main{
     padding: 0%;
     float: right;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 0px;
     overflow: hidden;
+ 
     
     
 }
@@ -113,24 +116,28 @@ main{
     max-height: 100%;
     margin-top: 0px;
 
-
 }
 
 .linhas-container{
-    display: inline;
-    width: 500px;
-    height: 285px;
     background-color: rgba(250, 250, 250, 0.945);
+    background-color: #34aeb4;
+    display: inline;
+    width: 800px;
+    height: 285px;
+    min-width: 320px;
+    max-width: 500px;
+    width: 100%;
+    float: left;
+ 
 }
 .linhas{
     display: flex;
     height: 95px;  
     padding: 0 5px;
-    
-    
-    
+    position: relative;
+
 }
-/*
+
 #linha1{
     background-color: yellow;
   
@@ -141,7 +148,7 @@ main{
 #linha3{
     background-color: brown;
 }
-*/
+
 ul{
     position: relative;
     list-style: none;
@@ -181,11 +188,25 @@ ul{
     height: 100vh;
     width: 800px;
     margin: 200px 0;
+    margin-left: 100px;
     background-color: rgb(208, 229, 235);
 }
- 
+
 .rodape{
     height: 150px;
     margin-top: 150px;
     background-color: rgb(32, 32, 32);
+}
+/* Formatação do conteudo */
+#artigos{
+    margin-left: 20px;
+}
+#artigos p{
+    line-height: 21px;
+  
+}
+#artigos ul{
+    list-style:disc;
+    display: inline;
+    
 }
