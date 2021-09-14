@@ -5,6 +5,7 @@
 
 body{
     background-color: rgb(255, 254, 254);
+    
     position: fixed;
     top: 0;
     width: 100%;
@@ -138,6 +139,7 @@ main{
 
 .corpo{
     background-color: rgb(255, 213, 136);
+    background-color: blue;
     height: 90%;
     width: 25%;
     padding: 0%;
