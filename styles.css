@@ -5,13 +5,9 @@
 
 body{
     background-color: rgb(255, 254, 254);
-
-
-   
     top: 0;
     width: 100%;
     height: 100%;
- 
     overflow:auto;
 }
 
@@ -29,7 +25,7 @@ body{
 #logo{
     max-width: 100%;
     max-height: 100%;
-    height: 75px;
+    height: 70px;
     margin-top: 10px;
     margin-left: 35px;
 }
@@ -43,6 +39,7 @@ body{
     
 
 }
+
 #lista-nav a {
     color: #34aeb4;
     display: block;
@@ -50,6 +47,7 @@ body{
     font-size: 18px;
     width: 100%;
     text-decoration: none;
+    font-family: sans-serif;
 }
 #lista-nav a:hover{
     color: rgba(201, 16, 16, 0.5);
@@ -57,67 +55,32 @@ body{
 }
 
 
-
+/* --------------------------MAIN------------------------- */
 main{
-    background-color: rgb(230, 194, 128); 
-    background-color: red;
+    /* background-color: rgb(230, 194, 128); 
+    background-color: red; */
     margin: auto;
     margin-top: 65px ;
-    height: 50%;
-    width: 65%;
+    height: 300px;
+    width: 690px;
    
 }
-@media screen and (max-width: 850px) {
-    main{
-        background-color: rgb(230, 194, 128); 
-        background-color: red;
-        margin: auto;
-        margin-top: 65px ;
-        height: 45%;
-        width: 80%;
-        
-    }
-}
-@media screen and (max-width: 600px) {
-    main{
-        background-color: rgb(230, 194, 128); 
-        background-color: red;
-        margin: auto;
-        margin-top: 65px ;
-        height: 40%;
-        width: 80%;
-        
-    }
-}
-@media screen and (max-width: 550px) {
-    main{
-        background-color: rgb(230, 194, 128); 
-        background-color: red;
-        margin: auto;
-        margin-top: 65px ;
-        height: 35%;
-        width: 90%;
-        
-    }
-}
-/* main{
-    background-color: red;
-    width: 100%;
 
-} */
 .input{
     display: flex;
     padding-bottom: 0.8%;
     background-color: white;
-    height: 10%;
+    height: 30px;
     width: 100%;
 
 }
+
 #litros{
     height: 85%;
     width: 15%;
     font-size: 130%;
 }
+
 #botao{
     color: white;
     background-color: green;
@@ -127,9 +90,9 @@ main{
     margin-top: 0px;
     padding: 0.5%;
     border-radius: 25px;
-    font-size: 85%;
-    
+    font-size: 80%;  
 }
+
 #botao:hover{
     cursor: pointer;
     color: green;
@@ -137,12 +100,11 @@ main{
     border-color: green;
     font-weight: bold;
     transition-duration: 0.8s;
-
 }
 
 .corpo{
     background-color: rgb(255, 213, 136);
-    background-color: blue;
+    background-color: rgb(255, 208, 121);
     height: 90%;
     width: 25%;
     padding: 0%;
@@ -150,32 +112,25 @@ main{
     text-align: center;
     margin-left: 0px;
     overflow: hidden;
- 
-    
-    
 }
+
 #img-corpo{
    height: 100%;
    width: 57%;
-
 }
 
 .linhas-container{
-
     background-color: rgb(243, 243, 243);
     display: inline;
     height: 90%;   
     width: 75%;
     float: left;
     padding: 0%;
- 
 }
 .linhas{
     display: flex;
     height: 33.3%;
     width: 100%;
-    
-  
 }
 
  /* #linha1{
@@ -194,9 +149,7 @@ ul{
     display: flex;
     width: 100%;
     height: 100%;
-    
 }
-
 .btn-copo{
     background-color: transparent;
     /* display: inline-block; */
@@ -209,46 +162,58 @@ ul{
     margin-right: 0px;
     border-color: rgba(255, 255, 255, 0.1);
     border-radius: 10%;
-  
-
 }
-
 .copo-vazio{ 
     position: relative;
-    /* max-height: 100%;  
-    max-width: 100%; */
     width: 100%;
     height: auto;
     padding: 0;
     margin: auto;
     margin-top: 10px;
-    
 }
-
-.conteudo{
-    height: 100vh;
-    width: 800px;
-    margin: 200px 0;
-    margin-top: 1000px;
-    margin-left: 100px;
-    background-color: rgb(208, 229, 235);
-}
-
-.rodape{
-    height: 150px;
-    margin-top: 150px;
-    background-color: rgb(32, 32, 32);
-}
+/* -----------------------CONTEUDO---------------------------- */
 /* Formatação do conteudo */
-#artigos{
+#conteudo{
+    background-color: rgb(221, 234, 238);
+    background-color: white;
+    width: 700px;
+    margin: 210px;
+    padding: 3%;
     margin-left: 20px;
+
 }
-#artigos p{
+#conteudo h2{
+    padding-bottom: 3%;
+    font-size: 28px;
+    color: #616161;
+    font-weight: bold;
+}
+#conteudo p{
     line-height: 21px;
-  
+    font-size: 20px;
+    text-align: justify;
+    color: #616161;
 }
-#artigos ul{
+#conteudo ul{
     list-style:disc;
     display: inline;
+    font-size: 20px;   
+    color: #616161; 
+}
+#conteudo li{
+    margin-left: 5%;
+}
+
+#garrafa{
+    width: 75%;
+    margin: 10px 40px;
+    text-align: center;
+
+
     
+}
+.rodape{
+    height: 150px;
+    margin-top: 400px;
+    background-color: rgb(32, 32, 32);
 }
