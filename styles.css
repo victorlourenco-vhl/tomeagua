@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 body{
@@ -207,10 +208,11 @@ ul{
 #garrafa{
     width: 75%;
     margin: 10px 40px;
-    text-align: center;
-
-
-    
+    text-align: center;    
+}
+blockquote{
+    text-align: right;
+    font-size: 110%;
 }
 .rodape{
     height: 150px;
