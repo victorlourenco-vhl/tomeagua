@@ -220,31 +220,45 @@ blockquote{
 /* -----------------------LER MAIS---------------------------- */
 #leia-mais{
     display: flex;
-    background-color: greenyellow;
+    background-color: rgba(235, 238, 230, 0.466);
     height: 150px;
     width: 100%;
     justify-content: space-between;
 }
 .pags{
-    
-    background-color:  grey;
-    width: 31%;
-    height: 100%;
-    
+    /* background-color:  grey; */
+    width: 28%;
+    height: 80%;
 }
+
 .nav-paginas{
-    background-color: rgb(223, 222, 222);
-    height: 25%;
+    /* background-color: rgb(223, 222, 222); */
     width: 100%;
-    margin-top: 52%;
+    margin-top: 0%;
 }
 .nav-paginas h3{
-    
-    font-size: 100%;
+    font-size: 90%;
 }
+#leia-mais a{
+    color: blue;
+}
+
+/* #beber-agua-emagrece{
+    background: url(imagens/berber-agua-emagrece.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: center; 
+} */
+
+.pags img{ 
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
 /* -----------------------RODAPE---------------------------- */
 .rodape{
     height: 150px;
-    margin-top: 300px;
+    margin-top: 200px;
     background-color: rgb(32, 32, 32);
 }
