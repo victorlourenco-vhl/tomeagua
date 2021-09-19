@@ -2,6 +2,8 @@ function calcular(){
     var litros = document.getElementById("litros").value;
     var qtncopos = litros / 0.250;
     var copoids = [];
+
+  
     var str = "#copo";
     if(litros == 0){
         document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
@@ -28,12 +30,23 @@ function calcular(){
         btnids.push(strBtn);
         strBtn = "#btn-copo";
     }    
+    var btnClick = [];
+    for(var i = 0; i < 21; i++){
+        strBtn  += i;
+        btnClick.push(strBtn);
+        strBtn = "#btn-copo"; 
+    }   
+    var getBtns = document.querySelectorAll(btnClick);
+    for(var i = 0; i < getBtns.length; i++){
+        getBtns[i].removeEventListener("click", teste);
+    }   
     var getIDs = document.querySelectorAll(btnids);
     for(var c = 0; c < getIDs.length; c++){
-        getIDs[c].addEventListener("click", teste)
+        getIDs[c].addEventListener("click", teste);
         
     }   
-    contador = 0;
+    console.log(getIDs);
+    contador = 0; 
     document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
 }
 

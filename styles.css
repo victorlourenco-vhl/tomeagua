@@ -180,7 +180,7 @@ ul{
     /* background-color: rgb(221, 234, 238);
     background-color: white; */
     width: 700px;
-    margin: 210px;
+    margin: 20%;
     margin-left: 50px;
     font-family: 'Fira Sans', sans-serif;
 
@@ -237,7 +237,7 @@ blockquote{
     margin-top: 0%;
 }
 .nav-paginas h3{
-    font-size: 90%;
+    font-size: 89%;
 }
 #leia-mais a{
     color: blue;
