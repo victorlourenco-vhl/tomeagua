@@ -262,3 +262,28 @@ blockquote{
     margin-top: 200px;
     background-color: rgb(32, 32, 32);
 }
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.social-media i{
+    background-color: #6a3093;
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;/*Alinha o elemento na horizontal(eixoX)*/
+    align-items: center;/*Alinha o elemento na vertical(eixoY)*/
+    border-radius: 50%;
+    transition: background-color 0.7s;
+}
+
+.social-media i:hover{
+    background-color: #a044ff;
+}

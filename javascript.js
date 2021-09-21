@@ -37,7 +37,7 @@ function calcular(){
         strBtn = "#btn-copo"; 
     }   
     var getBtns = document.querySelectorAll(btnClick);
-    for(var i = 0; i < getBtns.length; i++){
+    for(var i = -1; i < getBtns.length; i++){
         getBtns[i].removeEventListener("click", teste);
     }   
     var getIDs = document.querySelectorAll(btnids);
