@@ -1,53 +1,98 @@
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNavbar.init();
 function calcular(){
     var litros = document.getElementById("litros").value;
-    var qtncopos = litros / 0.250;
-    var copoids = [];
+    if (litros != 0){
+        var qtncopos = litros / 0.250;
+        var copoids = [];
 
-  
-    var str = "#copo";
-    if(litros == 0){
+    
+        var str = "#copo";
+        for(var qtn = 1; qtn <= qtncopos; qtn++){
+            str  += qtn;
+            copoids.push(str);
+            str = "#copo";
+        }
+        var y = document.getElementsByClassName("copo-vazio");
+        for (var n = 0; n < y.length; n++) {
+            y[n].src='imagens/copo-vazio.png';
+        }
+        var x = document.querySelectorAll(copoids);
+        for (var i = 0; i < x.length; i++) {
+            x[i].src='imagens/copo-cheio.png';
+        }
+        // IDs Botao
+        var btnids = [];
+        var strBtn = "#btn-copo";
+        for(var btn = 1; btn <= qtncopos; btn ++){
+            strBtn += btn;
+            btnids.push(strBtn);
+            strBtn = "#btn-copo";
+        }    
+        var btnClick = [];
+        for(var i = 0; i < 21; i++){
+            strBtn  += i;
+            btnClick.push(strBtn);
+            strBtn = "#btn-copo"; 
+        }   
+        var getBtns = document.querySelectorAll(btnClick);
+        for(var i = 0; i < getBtns.length; i++){
+            getBtns[i].removeEventListener("click", teste);
+        }   
+        var getIDs = document.querySelectorAll(btnids);
+        for(var c = 0; c < getIDs.length; c++){
+            getIDs[c].addEventListener("click", teste);
+            
+        }   
+        console.log(getIDs);
+        contador = 0; 
         document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
-      
     }
-    for(var qtn = 1; qtn <= qtncopos; qtn++){
-        str  += qtn;
-        copoids.push(str);
-        str = "#copo";
+    else{
+        window.location.reload();
     }
-    var y = document.getElementsByClassName("copo-vazio");
-    for (var n = 0; n < y.length; n++) {
-        y[n].src='imagens/copo-vazio.png';
-    }
-    var x = document.querySelectorAll(copoids);
-    for (var i = 0; i < x.length; i++) {
-        x[i].src='imagens/copo-cheio.png';
-    }
-    // IDs Botao
-    var btnids = [];
-    var strBtn = "#btn-copo";
-    for(var btn = 1; btn <= qtncopos; btn ++){
-        strBtn += btn;
-        btnids.push(strBtn);
-        strBtn = "#btn-copo";
-    }    
-    var btnClick = [];
-    for(var i = 0; i < 21; i++){
-        strBtn  += i;
-        btnClick.push(strBtn);
-        strBtn = "#btn-copo"; 
-    }   
-    var getBtns = document.querySelectorAll(btnClick);
-    for(var i = -1; i < getBtns.length; i++){
-        getBtns[i].removeEventListener("click", teste);
-    }   
-    var getIDs = document.querySelectorAll(btnids);
-    for(var c = 0; c < getIDs.length; c++){
-        getIDs[c].addEventListener("click", teste);
-        
-    }   
-    console.log(getIDs);
-    contador = 0; 
-    document.getElementById("img-corpo").src="imagens/corpo/corpo0.png";
 }
 
 function teste(){
@@ -105,18 +150,3 @@ function teste(){
     document.getElementById("img-corpo").src=corpoPorcentagem;
 }
 
-
-
-/*
-http://127.0.0.1:5501/imagens/copo-vazio.png
-function mudarCopo(){
-        var x = indexof(this.innerHTML);
-        console.log(x);
-    }
- 
-
-function img01(){
-    document.getElementById("copo1").src="imagens/copo-vazio.png";
-}
-*/
-//document.querySelectorAll("#copo1, #copo2, #copo3, #copo4").src="imagens/copo-cheio.png";

@@ -2,60 +2,47 @@
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
+   
+    
 }
 
 body{
     background-color: rgb(253, 251, 251);
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow:auto;
+    overflow-x: hidden;
 }
 
-/* --------------------------------------------------- */
-#header{
+/* ------------------------HEADER--------------------------- */
+header a{
+    color: #34aeb4;  
+    text-decoration: none;
+    transition: 0.4s;
+}
+header a:hover{
+    color: rgba(201, 16, 16, 0.5);
     
-    background-color: rgba(162, 163, 81, 0.158);
-    box-sizing: border-box;
-    height: 80px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /*Pega os itens do header e dá espaçamento*/width: 100%;
 }
 #logo{
-    max-width: 100%;
-    max-height: 100%;
-    height: 70px;
+    height: 60px;
     margin-top: 10px;
     margin-left: 35px;
+  
 }
-
-#lista-nav {
-    margin-right: 100px;
+ nav{
     display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(162, 163, 81, 0.158);
+    height: 70px;
+}
+.nav-list {
     list-style: none;
-    gap: 2rem; /*Serve para dar espaçamento entre os li*/
-    width: 100%;
-    
-
+    display: flex;
 }
-
-#lista-nav a {
-    color: #34aeb4;
-    display: block;
-    padding: 0.8rem;
-    font-size: 18px;
-    width: 100%;
-    text-decoration: none;
-    font-family: sans-serif;
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
-#lista-nav a:hover{
-    color: rgba(201, 16, 16, 0.5);
-    transition-duration: 0.5s;
-}
-
 
 /* --------------------------MAIN------------------------- */
 main{
@@ -135,18 +122,7 @@ main{
     width: 100%;
 }
 
- /* #linha1{
-    background-color: yellow;
- 
-}
-#linha2{
-    background-color: purple;
-}
-#linha3{
-    background-color: brown;
-}  */
-
-ul{
+main ul{
     list-style: none;
     display: flex;
     width: 100%;
@@ -243,13 +219,6 @@ blockquote{
     color: blue;
 }
 
-/* #beber-agua-emagrece{
-    background: url(imagens/berber-agua-emagrece.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%; 
-    background-position: center; 
-} */
-
 .pags img{ 
     height: 100%;
     width: 100%;
@@ -261,29 +230,4 @@ blockquote{
     height: 150px;
     margin-top: 200px;
     background-color: rgb(32, 32, 32);
-}
-.social-media{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.social-media i{
-    background-color: #6a3093;
-    color: white;
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;/*Alinha o elemento na horizontal(eixoX)*/
-    align-items: center;/*Alinha o elemento na vertical(eixoY)*/
-    border-radius: 50%;
-    transition: background-color 0.7s;
-}
-
-.social-media i:hover{
-    background-color: #a044ff;
 }
