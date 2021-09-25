@@ -10,7 +10,7 @@
     margin: 8px;
     transition: 0.3s;
 }
-@media (max-width: 750px){
+@media (max-width: 550px){
     body{
         overflow-x: hidden;
     }
@@ -108,6 +108,29 @@
         font-size: 110%;
         color: #616161; 
     }
+    #leia-mais{
+      display: inline;
+      background-color: rgba(235, 238, 230, 0.466);
+      /* height: 150px; */
+      width: 100%;
+      justify-content: space-between;
+  }
+  .pags{
+    width: 80%;
+    margin: auto;
+  }
+  .nav-paginas h3{
+    font-size: 100%;
+    padding-bottom: 14%;
+    
+  }
+  #text-leiaMais{
+    margin-bottom: 8%;
+  }
+  blockquote{
+    text-align: right;
+    font-size: 100%;
+}
 }
 .nav-list.active{
     transform: translateX(0);

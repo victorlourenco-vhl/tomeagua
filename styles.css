@@ -49,7 +49,7 @@ main{
     /* background-color: rgb(230, 194, 128); 
     background-color: red; */
     margin: auto;
-    margin-top: 65px ;
+    margin-top: 95px ;
     height: 300px;
     width: 690px;
    
@@ -163,13 +163,13 @@ main ul{
 }
 #conteudo h2{
     padding-bottom: 3%;
-    font-size: 160%;
+    font-size: 140%;
     color: #616161;
     font-weight: bold;
 }
 #conteudo p{
     line-height: 160%;
-    font-size: 125%;
+    font-size: 110%;
     text-align: justify;
     color: #616161;
     
@@ -177,7 +177,7 @@ main ul{
 #conteudo ul{
     list-style:disc;
     display: inline;
-    font-size: 125%; 
+    font-size: 110%;
     color: #616161; 
 }
 #conteudo li{
@@ -185,13 +185,19 @@ main ul{
 }
 
 #garrafa{
-    width: 80%;
+    width: 75%;
     margin-left: 10%;
     border-radius: 20px;
 }
 blockquote{
     text-align: right;
     font-size: 110%;
+}
+h1{
+    padding-bottom: 3%;
+    font-size: 110%;
+    color: #616161;
+    font-weight: bold;
 }
 /* -----------------------LER MAIS---------------------------- */
 #leia-mais{
@@ -231,3 +237,4 @@ blockquote{
     margin-top: 200px;
     background-color: rgb(32, 32, 32);
 }
+
