@@ -81,13 +81,13 @@
         font-size: 55%;  
     }
 
-    #conteudo{
+    article{
     width: 85%;
     margin-top: 20%;
     margin-left:7%;    
     font-family: 'Fira Sans', sans-serif;
     }
-    #conteudo h2{
+    article h2{
         padding-bottom: 5%;
         font-size: 130%;
         color: #616161;
@@ -95,7 +95,7 @@
         text-align: justify;
         
     }
-    #conteudo p{
+     article p{
         line-height: 160%;
         font-size: 110%;
         text-align: justify;

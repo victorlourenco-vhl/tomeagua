@@ -151,36 +151,36 @@ main ul{
 }
 /* -----------------------CONTEUDO---------------------------- */
 /* Formatação do conteudo */
-#conteudo{
-
+article{
     /* background-color: rgb(221, 234, 238);
     background-color: white; */
     width: 700px;
     margin: 20%;
     margin-left: 50px;
     font-family: 'Fira Sans', sans-serif;
+    
 
 }
-#conteudo h2{
+article h2{
     padding-bottom: 3%;
     font-size: 140%;
     color: #616161;
     font-weight: bold;
 }
-#conteudo p{
+article p{
     line-height: 160%;
     font-size: 110%;
     text-align: justify;
     color: #616161;
     
 }
-#conteudo ul{
+article ul{
     list-style:disc;
     display: inline;
     font-size: 110%;
     color: #616161; 
 }
-#conteudo li{
+article li{
     margin-left: 5%;
 }
 
@@ -193,12 +193,7 @@ blockquote{
     text-align: right;
     font-size: 110%;
 }
-h1{
-    padding-bottom: 3%;
-    font-size: 110%;
-    color: #616161;
-    font-weight: bold;
-}
+
 /* -----------------------LER MAIS---------------------------- */
 #leia-mais{
     display: flex;
@@ -233,8 +228,54 @@ h1{
 
 /* -----------------------RODAPE---------------------------- */
 .rodape{
+  
+    align-items: center;
+    margin: auto;
+    text-align: center;
     height: 150px;
     margin-top: 200px;
     background-color: rgb(32, 32, 32);
 }
+.contato-footer{
+    justify-content: center;
+    display: flex;
+    
 
+}
+#email-icone{
+    margin-top: 1.9%;
+}
+#email{""
+    margin-top: 2%;
+    font-size: 120%;
+    color: white;
+    margin-left:0.3%;
+}
+
+.conteudo-footer ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+.conteudo-footer li{
+    margin-left: 25px;
+    font-size: 105%;
+    color: white;
+}
+.conteudo-footer p{
+    color: #9e9898;
+    margin-top: 1.5%;
+}
+/* -----------------------OUTRAS PÁGINAS ---------------------------- */
+.conteudo-pags{
+    margin-top: 5%;
+}
+h1{
+    padding-bottom: 3%;
+    font-size: 145%;
+    color: #616161;
+    font-weight: bold;
+}
+.pagina-incial a{
+    margin-bottom: 100%;
+}
