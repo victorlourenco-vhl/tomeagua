@@ -126,15 +126,15 @@ function teste(){
     corpoPorcentagem = "imagens/corpo/corpo0.png";
    }
     if (contador >= (qtncopos / 4) ){
-        corpoPorcentagem = "imagens/corpo/corpo25.png";
+        corpoPorcentagem = "imagens/corpo/corpo25.gif";
     }
     
     if (contador >= (qtncopos / 2) ){
-        corpoPorcentagem = "imagens/corpo/corpo50.png";
+        corpoPorcentagem = "imagens/corpo/corpo50.gif";
     }
     
     if (contador >= (qtncopos / 4)*3 ){
-        corpoPorcentagem = "imagens/corpo/corpo75.png";
+        corpoPorcentagem = "imagens/corpo/corpo75.gif";
     }
 
     if (contador == qtncopos){
