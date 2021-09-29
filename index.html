@@ -19,7 +19,7 @@
 <body>
   
 <!-------------------------HEADER------------------------------->
-    <header >
+    <header id="header">
        <nav>
            <a href="index.html"><img src="imagens/tomeagua.png" alt="logo" id="logo"></a>
            <div class="mobile-menu">
@@ -36,7 +36,7 @@
        </nav>
     </header>
 <!-------------------------MAIN------------------------------->
-    <main>
+    <main id="main">
         <div class="input">
             <input type="number" name="litros" id="litros" placeholder="Litros" min="0" max="5.250" step="0.250">
             <button type="submit" id="botao" onclick="calcular();">CALCULAR</button>
@@ -94,7 +94,7 @@
         
     </main>
 <!-------------------------CONTEÚDO------------------------------->
-    <article>
+    <article >
         <h2>A importância da água pra a manutenção do corpo</h2>
         <p>A água é um elemento essencial para o corpo humano e está presente em todas as células, tecidos e orgãos, levando nutrientes    pela corrente sanguínea para todas às células do corpo. Além disso, a água ajuda a regular todas as funções corporais. </p> 
         <br>
@@ -129,9 +129,21 @@
         <blockquote><a href="">Quantos litros de aguá beber por dia?</a> </blockquote>
         <br><br>
         <h2>Quais as consequências do baixo consumo de água?</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque architecto hic ipsum reiciendis culpa nulla debitis adipisci vel ex, doloremque unde, molestiae labore. Velit ab vel ducimus sapiente voluptatum.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel debitis cupiditate, fugiat nobis a rerum laudantium, delectus blanditiis officiis repudiandae animi, est reprehenderit esse eos quaerat voluptatibus et autem explicabo!</p>
+        <p>Existem algumas consequências bem perigosas em beber pouca água, o organismo pode responder negativamente a isso de diferentes maneiras. Algumas das principais consequências são: </p>
+        <br><br>
+        <ul>
+            <li>Maior envelhecimento da pele;</li>
+            <li>Dificuldades cognitivas;</li>
+            <li>Halitose (mau hálito);</li>
+            <li>Cansaço;</li>
+            <li>Lentidão do intestino;</li>
+            <li>Queda no desempenho escolar;</li>
+            <li>Dificuldade para perder peso</li>
+            <li>Infecção urinária</li>
+            <li>Prisão de ventre</li>
+        </ul>
+        <br><br>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel debitis cupiditate, fugiat nobis a rerum laudantium, delectus blanditiis officiis repudiandae animi, est reprehenderit esse eos quaerat voluptatibus et autem explicabo!</p> -->
         <br>
         <h2>Principais doenças causas pela falta de água</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, corrupti! Nisi tempora consequatur perferendis temporibus distinctio ducimus facere enim. Dignissimos eligendi, vel perferendis officia eius provident commodi. Aliquid, autem eligendi.</p>
@@ -143,14 +155,14 @@
         <div id="leia-mais">
 
             <div class="pags" id="mais-agua">
-                <a href="paginas/como-beber-mais-agua.html"><img src="imagens/artigos/mais-agua.jpg" alt=""></a>
+                <a href="paginas/como-beber-mais-agua.html"><img src="../imagens/artigos/mais-agua.jpg" alt=""></a>
                 <div class="nav-paginas" id="mais-agua-ajuste">
                     <h3><a href="paginas/como-beber-mais-agua.html">Hábitos para beber mais água</a></h3>
                 </div>  
             </div>
            
             <div class="pags" id="beber-agua-emagrece">
-                <a href="paginas/o-quanto-de-agua-beber-para-emagrecer.html"><img src="imagens/artigos/quanta-agua-tomar.jpg" alt=""></a>
+                <a href="paginas/o-quanto-de-agua-beber-para-emagrecer.html"><img src="../imagens/artigos/quanta-agua-tomar.jpg" alt=""></a>
                 <div class="nav-paginas">
                     <h3><a href="paginas/o-quanto-de-agua-beber-para-emagrecer.html">Quantos litros de água tomar?</a></h3>
                 </div>
@@ -176,10 +188,10 @@
             </ul>
             <p>&copy; 2021 Tome Água</p>
         </div>
-
     </footer>
 
     <!--Link Javascript-->
     <script src="javascript.js"></script>
 </body>
+
 </html>

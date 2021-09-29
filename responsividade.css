@@ -15,38 +15,43 @@
         overflow-x: hidden;
     }
     header{
-        background-color: rgba(49, 49, 40, 0.1);
-
+        /* background-color: rgba(49, 49, 40, 0.1); */
+        background-color: rgb(247, 247, 244);
+        z-index: 10;
+        position: fixed;
     }
     nav{
+   
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items:  center;
         font-family: Arial, Helvetica, sans-serif;
         background-color: rgba(162, 163, 81, 0.158);
-        height: 60px;
+        height: 65px;
 
     }
     #logo{
-        height: 50px;
+        height: 53px;
         margin-top: 10px;
-        margin-left:10px;
+        margin-left: 10%;
       
     }
     .nav-list {
-        margin-top: 10px;
+        margin-top: 0;
         position: absolute;
         top: 8vh;
-        right: 0;
+        /* right: 0; */
         width: 50vw;
         height: 80vh;
-        background-color: rgba(49, 49, 40, 1);
-        z-index: 100;
+        background-color: rgba(49, 49, 40, 0.897);
+        /* background-color: rgb(247, 247, 244);
+        z-index: 10; */
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateX(200%);
         transition: transform 0.3s ease-in;
+   
       
       }
       .nav-list li {
@@ -55,12 +60,16 @@
       }
       .mobile-menu {
         display: block;
+        margin-right: 10%;
+        background-color: #61616154; 
+        background-color: rgba(49, 49, 40, 0.192);
+       
       }
       main{
         margin: auto;
-        margin-top: 65px ;
-        height: 180px;
-        width: 95%;
+        margin-top: 105px ;
+        height: 165px;
+        width: 90%;
         margin-bottom: 40%;
       }
       #litros{
@@ -78,7 +87,7 @@
         margin-top: 0px;
         padding: 0.5%;
         border-radius: 25px;
-        font-size: 55%;  
+        font-size: 45%;  
     }
 
     article{
@@ -112,11 +121,11 @@
       display: inline;
       background-color: rgba(235, 238, 230, 0.466);
       /* height: 150px; */
-      width: 100%;
+      width: 80%;
       justify-content: space-between;
   }
   .pags{
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
   .nav-paginas h3{
@@ -131,18 +140,22 @@
     text-align: right;
     font-size: 100%;
 }
+.rodape{
+  height: 105px;
+}
 }
 .nav-list.active{
-    transform: translateX(0);
+    transform: translateX(100%);
 }
 @keyframes navLinkFade {
     from {
+      /* display: none; */
       opacity: 0;
       transform: translateX(50px);
     }
     to {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateX(0%);
     }
   }
   
