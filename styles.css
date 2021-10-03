@@ -280,9 +280,12 @@ blockquote{
 .conteudo-pags{
     margin-top: 5%;
 }
+.conteudo-pags h2{
+    font-size: 125%;
+}
 h1{
     padding-bottom: 3%;
-    font-size: 145%;
+    font-size: 150%;
     color: #616161;
     font-weight: bold;
 }
