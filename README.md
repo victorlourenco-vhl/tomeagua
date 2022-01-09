@@ -7,7 +7,6 @@ O que eu aprendi:
 - Resposidade em Dispositivos Mobile
 - Versionamento de projetos com Git e Github
 - Aprendi a lidar possíveis problemas que podem ocorrer em um projeto
-- 
 
 Pontos a melhorar:
 - Web design
