@@ -10,3 +10,5 @@ Pontos a melhorar:
 
 Link do site:
 https://victorlourenco-vhl.github.io/tomeagua/
+ou 
+tomeagua.com
