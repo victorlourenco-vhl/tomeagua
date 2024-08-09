@@ -1,4 +1,4 @@
-# Tome Água 💧💦
+# Tome Água 💧
  
 O site tome água foi o primeiro site desenvolvido por mim e é uma ideia de autoria própria, no qual tive o objetivo de treinar minhas habilidades em HTML5, CSS3 e Javascript, enquanto tentava desenvolver uma aplicação para útil para auxiliar e incentivar as pessoas a beberem mais água.
 
